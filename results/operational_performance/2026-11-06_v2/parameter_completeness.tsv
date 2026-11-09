@@ -1,0 +1,15 @@
+parameter	raw_record_n	raw_source_file_n	original_unit	n_samples	n_matched_samples	measured_coverage_pct	n_A	n_B	n_C	n_D	n_unique_matched_records	n_independent_matched_observations	n_influent	n_effluent	n_cycle_measurement	n_instantaneous	n_phase_measured_mean	n_samples_with_design_background	design_background_coverage_pct	n_samples_with_numeric_nominal_setting_context	measured_same_day_usable	pre_sample_window_usable	phase_mean_usable	correlation_gate	missing_reason	background_source
+COD	0	0	NA	33	0	0	0	0	0	33	0	0	0	0	0	0	0	0	0.000000	0	FALSE	FALSE	FALSE	FAIL_no_matched_observations	project_raw_measurement_record_not_found	NA
+NH4-N	0	0	NA	33	0	0	0	0	0	33	0	0	0	0	0	0	0	0	0.000000	0	FALSE	FALSE	FALSE	FAIL_no_matched_observations	project_raw_measurement_record_not_found	NA
+NO2-N	0	0	NA	33	0	0	0	0	0	33	0	0	0	0	0	0	0	0	0.000000	0	FALSE	FALSE	FALSE	FAIL_no_matched_observations	project_raw_measurement_record_not_found	NA
+NO3-N	0	0	NA	33	0	0	0	0	0	33	0	0	0	0	0	0	0	0	0.000000	0	FALSE	FALSE	FALSE	FAIL_no_matched_observations	project_raw_measurement_record_not_found	NA
+TN	0	0	NA	33	0	0	0	0	0	33	0	0	0	0	0	0	0	0	0.000000	0	FALSE	FALSE	FALSE	FAIL_no_matched_observations	project_raw_measurement_record_not_found	NA
+PO4-P	0	0	NA	33	0	0	0	0	0	33	0	0	0	0	0	0	0	0	0.000000	0	FALSE	FALSE	FALSE	FAIL_no_matched_observations	project_raw_measurement_record_not_found	NA
+TP	0	0	NA	33	0	0	0	0	0	33	0	0	0	0	0	0	0	0	0.000000	0	FALSE	FALSE	FALSE	FAIL_no_matched_observations	project_raw_measurement_record_not_found	NA
+DO	0	0	NA	33	0	0	0	0	0	33	0	0	0	0	0	0	0	33	100.000000	25	FALSE	FALSE	FALSE	FAIL_no_matched_observations	project_raw_measurement_record_not_found;settings_not_measurements;G1_range_no_midpoint;baseline_recovery_3_separate_from_old_analysis_NA	docs/batch_01/experiment_design.md
+temperature	0	0	NA	33	0	0	0	0	0	33	0	0	0	0	0	0	0	15	45.454545	7	FALSE	FALSE	FALSE	FAIL_no_matched_observations	project_raw_measurement_record_not_found;G4_only;ambient_unknown;numeric_setting_context_includes_baseline_not_measured_temperature	docs/batch_01/experiment_design.md
+pH	0	0	NA	33	0	0	0	0	0	33	0	0	0	0	0	0	0	0	0.000000	0	FALSE	FALSE	FALSE	FAIL_no_matched_observations	project_raw_measurement_record_not_found	NA
+HRT	0	0	NA	33	0	0	0	0	0	33	0	0	0	0	0	0	0	0	0.000000	0	FALSE	FALSE	FALSE	FAIL_no_matched_observations	project_raw_measurement_record_not_found	NA
+SRT	0	0	NA	33	0	0	0	0	0	33	0	0	0	0	0	0	0	0	0.000000	0	FALSE	FALSE	FALSE	FAIL_no_matched_observations	project_raw_measurement_record_not_found	NA
+MLSS	0	0	NA	33	0	0	0	0	0	33	0	0	0	0	0	0	0	0	0.000000	0	FALSE	FALSE	FALSE	FAIL_no_matched_observations	project_raw_measurement_record_not_found	NA
+MLVSS	0	0	NA	33	0	0	0	0	0	33	0	0	0	0	0	0	0	0	0.000000	0	FALSE	FALSE	FALSE	FAIL_no_matched_observations	project_raw_measurement_record_not_found	NA

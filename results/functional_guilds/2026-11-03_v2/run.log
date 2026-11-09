@@ -1,0 +1,62 @@
+Module 1.2 START 2026-11-03 19:45:09 Asia/Shanghai
+ /home/leiyiping/miniconda3/envs/rachis-qiime2-2026.7/lib/R/bin/exec/R --no-echo --no-restore --vanilla --file=scripts/functional_guilds.R 
+PASS 环境 : 复用现有R环境，不安装软件或更新注释。 
+PASS 输入存在 : results/phyloseq/batch_01_phyloseq.rds; data/asv_table.tsv; data/taxonomy.tsv; metadata/source_sample_metadata.tsv; results/community_composition/2026-11-03_v2/analysis_metadata.tsv; results/community_composition/2026-11-03_v2/analysis_report.md; results/community_composition/2026-11-03_v2/genus_relative_abundance.tsv; docs/batch_01/experiment_design.md; docs/batch_01/analysis_plan.md; AGENTS.md; docs/research_context.md 
+PASS 群落v2基线锁定 : metadata、采样顺序及解释来源全部显式锁定community_composition/2026-11-03_v2；群落v1不进入计算输入。 
+PASS 原始count对象复用 : 5510 ASV × 33样本；原ASV与taxonomy指纹和对象来源一致，无需重跑测序QC或阶段1构建。 
+PASS 本模块输入计算断言 : 原始非负整数、无空样本；只检查本次计算必需条件，不重复深度异常筛查。 
+PASS ASV与原taxonomy一致 : 使用原Taxon及Confidence，不重新分类、不改变注释或筛除ASV。 
+PASS 样本身份 : 完整SampleID与原始metadata/对象逐行匹配，不拼造前缀。 
+PASS metadata原值及对象一致 : 原14列全部值保留；模块1.1派生表与RDS一致，G4基线分析DO NA/文档3分列沿用。 
+PASS 五模块数量 : G1/G2/G3/G4/G5=8/2/4/15/4；主29样本，G5四级分。 
+PASS 模块1.1排序复用 : 直接读取有效v2矩阵表头，沿用其33样本已确认顺序。 
+PASS R1排序与轮次 : A0 → A1 → A2 → E1 → E2 → E3 
+PASS R2排序与轮次 : B0 → B1 → B2 → B3 → F1 → F2 → F3 → F4 
+PASS R3排序与轮次 : C0 → C1 → C2 → G1 → G2 → G3 → G4 
+PASS R4排序与轮次 : D0 → D1 → D2 → D3 → H1 → H2 → H3 → H4 
+PASS DO与实验层级 : 保留4初始基线和11后期设计稳定期；全部实测NA，未按组整体填DO。 
+PASS 规则无重叠 : 明确列出的属别名只对应一个规则；不做子字符串/模糊匹配，不删除--other。 
+PASS ASV互斥分配 : 5510 ASV各一行、一个汇总类别；候选功能为注释文字，不另累计到互斥组。 
+PASS 保守汇总证据门控 : 只累计预定义强文献关联属标记；所有ASV仍仅有16S间接证据。 
+PASS 关键歧义不泄漏 : Nitrospira不计AOB/NOB；Acinetobacter/Dechloromonas不计PAO；--other不自动转为已鉴定功能属。 
+PASS 已核实别名与相似名区分 : Contendibacter别名有NCBI记录；Defluviimonas不误配Defluviicoccus。 
+PASS 全reads守恒 : 功能相关/候选/歧义/未分类/未映射的互斥分区之和=全部原始reads；未对功能子集重新归一化。 
+PASS 属级相对丰度 : 保留所有原始属标签及未分类行，分母始终为每样本全部ASV reads。 
+Warning: package ‘ggplot2’ was built under R version 4.5.3
+PASS Batch_01 | functional-associated composition | 33 samples图层 : 全部互斥类别保留，每个实际样本堆叠高度≈1；没有比例刻度删除。 
+PASS all_samples_functional_composition不覆盖 : 新目录首次生成图。 
+PASS all_samples_functional_composition输出 : 矢量PDF和160dpi PNG均生成。 
+PASS R1 | functional-associated succession图层 : 全部互斥类别保留，每个实际样本堆叠高度≈1；没有比例刻度删除。 
+PASS R1_functional_succession不覆盖 : 新目录首次生成图。 
+PASS R1_functional_succession输出 : 矢量PDF和160dpi PNG均生成。 
+PASS R2 | functional-associated succession图层 : 全部互斥类别保留，每个实际样本堆叠高度≈1；没有比例刻度删除。 
+PASS R2_functional_succession不覆盖 : 新目录首次生成图。 
+PASS R2_functional_succession输出 : 矢量PDF和160dpi PNG均生成。 
+PASS R3 | functional-associated succession图层 : 全部互斥类别保留，每个实际样本堆叠高度≈1；没有比例刻度删除。 
+PASS R3_functional_succession不覆盖 : 新目录首次生成图。 
+PASS R3_functional_succession输出 : 矢量PDF和160dpi PNG均生成。 
+PASS R4 | functional-associated succession图层 : 全部互斥类别保留，每个实际样本堆叠高度≈1；没有比例刻度删除。 
+PASS R4_functional_succession不覆盖 : 新目录首次生成图。 
+PASS R4_functional_succession输出 : 矢量PDF和160dpi PNG均生成。 
+PASS G5分级层级 : S1–S4按粒径排序，共用一个母样事件，不称为技术或独立生物重复。 
+PASS G5_functional_composition不覆盖 : 新目录首次生成图。 
+PASS G5 | functional-associated size fractions图层 : 全部互斥类别保留，每个实际样本堆叠高度≈1；没有比例刻度删除。 
+PASS G5_functional_composition输出 : 矢量PDF和160dpi PNG均生成。 
+PASS G4逐属趋势覆盖 : 13个已检出的已审阅属标签×15条G4记录；含4基线和11后期。 
+PASS G4_functional_taxa_trends不覆盖 : 新目录首次生成图。 
+PASS G4_functional_taxa_trends输出 : 矢量PDF和160dpi PNG均生成。 
+PASS PAO/GAO对照覆盖 : 33样本×2个保守关联代理；零值保留，不计算可能误导的竞争或性能指标。 
+PASS PAO_GAO_descriptive_comparison不覆盖 : 新目录首次生成图。 
+PASS PAO_GAO_descriptive_comparison输出 : 矢量PDF和160dpi PNG均生成。 
+PASS functional_guild_abundance.tsv回读 : 全部样本列数值与内存计算一致，并保持全部reads分母。 
+PASS functional_taxa_abundance.tsv回读 : 全部样本列数值与内存计算一致，并保持全部reads分母。 
+PASS 历史数据与结果保护 : 77个原输入、既有结果与设计文件SHA-256不变；原RDS及模块1.1 v1/v2未改写。 
+WARNING 功能推断边界 : 强文献支持的是参考类群关联，不是本项目ASV功能确证、功能基因测定或代谢活性；16S拷贝数/扩增偏倚未校正。 
+WARNING NOB与AnAOB零值边界 : 保守面板无匹配ASV时为0，仅表示该显式面板未检出；Nitrospira/--other候选另列，不能称NOB或AnAOB不存在。 
+WARNING 未核实文献与分类 : CCM19a直接原研究功能证据未核实；Nitrosymbiomonas目标功能未核实；--other语义未确认。不强制分配功能或删除后缀。 
+WARNING 来源/时间与样本量 : 主29行含前后/纵向记录及共享混合来源；G2两节点、G4缺R1-30d、G5单母样四级分；不独立，不作显著性、网络或因果分析。 
+WARNING DO及稳态 : 初始4样本DO设置分析NA/文档恢复3的差异沿用，全部实测DO未知；后11样本按设计稳定期，性能稳态未核验。 
+WARNING 文献检索覆盖 : 人工目标面板并非全功能注释或穷尽文献；若未映射不等于无功能。部分出版社/PMC全文访问受限，逐规则记录实际核实层级。 
+Module 1.2 END PASS 2026-11-03 19:45:22 ; elapsed_s= 12.25013 
+
+V2 DELIVERY PASS: all four TSVs reproduce exactly; explicit community-v2 baseline; current README/interpretation navigation uses functional v2; historical artifacts protected; 8 PNG/8 PDF integrity valid; overwrite refusal verified.

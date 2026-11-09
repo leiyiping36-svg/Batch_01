@@ -1,0 +1,83 @@
+{
+  "samples": 33,
+  "asvs": 5510,
+  "reads": 1364804,
+  "sample_counts": {
+    "Batch_01_A0": 38340,
+    "Batch_01_A1": 36611,
+    "Batch_01_A2": 33074,
+    "Batch_01_E1": 42281,
+    "Batch_01_E2": 50874,
+    "Batch_01_E3": 47307,
+    "Batch_01_S1": 43146,
+    "Batch_01_S2": 43812,
+    "Batch_01_S3": 40169,
+    "Batch_01_S4": 44760,
+    "Batch_01_B0": 33436,
+    "Batch_01_B1": 32430,
+    "Batch_01_B2": 44563,
+    "Batch_01_B3": 37840,
+    "Batch_01_F1": 31457,
+    "Batch_01_F2": 42004,
+    "Batch_01_F3": 42893,
+    "Batch_01_F4": 47321,
+    "Batch_01_C0": 40535,
+    "Batch_01_C1": 47303,
+    "Batch_01_C2": 49428,
+    "Batch_01_G1": 46081,
+    "Batch_01_G2": 45486,
+    "Batch_01_G3": 33736,
+    "Batch_01_G4": 53307,
+    "Batch_01_D0": 43792,
+    "Batch_01_D1": 41174,
+    "Batch_01_D2": 36956,
+    "Batch_01_D3": 35304,
+    "Batch_01_H1": 39799,
+    "Batch_01_H2": 40046,
+    "Batch_01_H3": 43034,
+    "Batch_01_H4": 36505
+  },
+  "rank_coverage": {
+    "domain": {
+      "assigned_asvs": 5510,
+      "assigned_reads": 1364804,
+      "read_percent": 100.0
+    },
+    "kingdom": {
+      "assigned_asvs": 5260,
+      "assigned_reads": 1364066,
+      "read_percent": 99.94592630150557
+    },
+    "phylum": {
+      "assigned_asvs": 4927,
+      "assigned_reads": 1355577,
+      "read_percent": 99.32393222763122
+    },
+    "class": {
+      "assigned_asvs": 4763,
+      "assigned_reads": 1352594,
+      "read_percent": 99.10536604523433
+    },
+    "order": {
+      "assigned_asvs": 4437,
+      "assigned_reads": 1332060,
+      "read_percent": 97.6008276646317
+    },
+    "family": {
+      "assigned_asvs": 4224,
+      "assigned_reads": 1326489,
+      "read_percent": 97.19263718453345
+    },
+    "genus": {
+      "assigned_asvs": 3664,
+      "assigned_reads": 1246341,
+      "read_percent": 91.32014560332473
+    },
+    "species": {
+      "assigned_asvs": 0,
+      "assigned_reads": 0,
+      "read_percent": 0.0
+    }
+  },
+  "flagged_asvs": 0
+}

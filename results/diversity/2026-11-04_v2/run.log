@@ -1,0 +1,91 @@
+START 2026-11-04 15:53:04 Asia/Shanghai
+ /home/leiyiping/miniconda3/envs/rachis-qiime2-2026.7/lib/R/bin/exec/R --no-echo --no-restore --vanilla --file=scripts/diversity_analysis.R 
+PASS 环境 : 复用现有R环境，不安装/更新软件。 
+Warning: package ‘ggplot2’ was built under R version 4.5.3
+PASS 输入存在 : results/phyloseq/batch_01_phyloseq.rds; data/asv_table.tsv; data/taxonomy.tsv; data/exported_sequences/dna-sequences.fasta; metadata/source_sample_metadata.tsv; results/community_composition/2026-11-03_v2/analysis_metadata.tsv; results/community_composition/2026-11-03_v2/genus_relative_abundance.tsv; results/community_composition/2026-11-03_v2/analysis_report.md; results/functional_guilds/2026-11-03_v2/functional_asv_annotation.tsv; results/functional_guilds/2026-11-03_v2/functional_mapping_evidence.tsv; results/functional_guilds/2026-11-03_v2/functional_taxa_abundance.tsv; results/functional_guilds/2026-11-03_v2/functional_guild_abundance.tsv; results/functional_guilds/2026-11-03_v2/analysis_report.md; scripts/functional_guilds.R; docs/batch_01/experiment_design.md; docs/batch_01/analysis_plan.md; docs/research_context.md; AGENTS.md; logs/taxonomy/inputs.json 
+PASS v2基线锁定 : 计算输入仅取群落v2/功能v2；RDS、原count/taxonomy、原metadata、派生metadata及属矩阵SHA-256均匹配功能v2报告。没有读取被删除模块1.3结果。 
+PASS 已有对象来源 : 对象原count未变换，三个原输入指纹匹配；按v2报告核验兼容复用，不重建对象。 
+PASS 计算输入断言 : 5510×33原始非负整数count与RDS逐格一致；ID唯一、无NA和空样本；不重复上游深度异常筛查。 
+PASS metadata身份 : v2派生表与现有对象一致；原33×14列逐值保留。 
+PASS 设计名单门控 : 与设计文档逐模块核对33个完整ID，8/2/4/15/4；来源字段回查已确认文档，不按名称/目录猜组。 
+PASS 时间/单位门控 : G4四基线+11后期，R1缺30d；G5同母样；保留已确认轮次、混合谱系、保存恢复和重复时间点。 
+WARNING 推断门控关闭 : 主29记录不独立、共享来源与重复测量、DO/阶段/时间混杂；G5一母样四级分。只描述，不做显著性/网络/因果分析。 
+WARNING DO与稳态 : 设计确认G4基线是恢复设置3且切换低DO前；继承v2分析字段NA、design_document字段3差异保留。全部瞬时实测NA；后期设计稳定运行期不等于性能稳态已验证。 
+PASS 定向分类来源 : 全部5510 ASV原谱系/置信度与taxonomy一致；四份功能v2表均实际读取。 
+PASS 功能边界 : Thauera/Acinetobacter/Dechloromonas不进保守PAO，Nitrospira功能歧义、Brocadia--other分类受限；原映射不变。 
+PASS Alpha公式 : Observed=count>0；Shannon自然log；Simpson=1−Σp²；Chao1偏差校正与vegan接口一致。 
+WARNING Chao1适用性 : 原去噪count的f1=0–6、f2=23–118；可以计算但单例贫化，不能可靠估计真实总丰富度，不以接近Observed证明取样饱和。 
+PASS Beta独立公式 : Bray=相对组成L1/2、二元Jaccard=1−交集/并集；完整33×33、对称、零对角、范围[0,1]。 
+PASS 等深度敏感性 : 仅内存不放回子抽样：31457 reads×100次，seed=20261104；全部33样本保留，主分析不抽稀。 
+PASS 敏感性完整性 : 保存全部528对主/敏感性距离及子抽样分位数；可恢复任意子集矩阵。 
+PASS main29 PCoA全轴重构 : 原负特征值3、Lingoes常数0.0209916448741；全部正轴重构校正距离误差<1e-8。 
+PASS G5 PCoA全轴重构 : 原负特征值0、Lingoes常数0；全部正轴重构校正距离误差<1e-8。 
+PASS 变化幅度门控 : G4 11个相邻实际节点+11个基线至后期、21个同期反应器对；仅同轮时间转移，不插补，不跨保存恢复连接。 
+PASS alpha_diversity.tsv 回读 : 行数/字段/全部数值列往返一致。 
+PASS bray_curtis_distance.tsv 回读 : 行数/字段/全部数值列往返一致。 
+PASS jaccard_distance.tsv 回读 : 行数/字段/全部数值列往返一致。 
+PASS pcoa_coordinates.tsv 回读 : 行数/字段/全部数值列往返一致。 
+PASS pcoa_eigenvalues.tsv 回读 : 行数/字段/全部数值列往返一致。 
+PASS G4_within_reactor_changes.tsv 回读 : 行数/字段/全部数值列往返一致。 
+PASS G4_same_day_between_reactors.tsv 回读 : 行数/字段/全部数值列往返一致。 
+PASS continuous_run_transitions.tsv 回读 : 行数/字段/全部数值列往返一致。 
+PASS pairwise_sensitivity.tsv 回读 : 行数/字段/全部数值列往返一致。 
+PASS sensitivity_summary.tsv 回读 : 行数/字段/全部数值列往返一致。 
+PASS R1_alpha_trajectories 图层 : 实际构建绘图层，仅真实观测；无检验标记。 
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+PASS R2_alpha_trajectories 图层 : 实际构建绘图层，仅真实观测；无检验标记。 
+PASS R3_alpha_trajectories 图层 : 实际构建绘图层，仅真实观测；无检验标记。 
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+`geom_line()`: Each group consists of only one observation.
+ℹ Do you need to adjust the group aesthetic?
+PASS R4_alpha_trajectories 图层 : 实际构建绘图层，仅真实观测；无检验标记。 
+PASS G4_shannon_trajectories 图层 : 实际构建绘图层，仅真实观测；无检验标记。 
+PASS main29_bray_pcoa 图层 : 实际构建绘图层，仅真实观测；无检验标记。 
+PASS G5_bray_pcoa 图层 : 实际构建绘图层，仅真实观测；无检验标记。 
+PASS G4_adjacent_changes 图层 : 实际构建绘图层，仅真实观测；无检验标记。 
+PASS G4_between_reactor_distances 图层 : 实际构建绘图层，仅真实观测；无检验标记。 
+PASS G5_alpha_diversity 图层 : 实际构建绘图层，仅真实观测；无检验标记。 
+PASS G4_function_diversity_comparison 图层 : 实际构建绘图层，仅真实观测；无检验标记。 
+PASS depth_sensitivity 图层 : 实际构建绘图层，仅真实观测；无检验标记。 
+WARNING 组成与检出敏感性 : CLR与Bray的全局秩一致性仅中等，成员Jaccard和丰度Bray可给不同稳定描述；CLR零值处理仍是分析假设，不宣称全方法稳健。 
+WARNING 距离与功能边界 : 距离共享样本、前两轴仅投影、端点差非累计周转；功能属比例与ASV多样性分辨率不同，不能做功能活性/因果/绝对丰度解释。 
+WARNING 批次与抽样限制 : 本批未知提取/PCR/测序子批次效应不能分离；子抽样范围非生物置信区间，不能消除扩增与16S拷贝数偏倚。 
+PASS 输入及有效结果保护 : 60个原始输入、设计、有效v2产物和脚本指纹不变；RDS/metadata/旧结果均不覆盖。 
+STATUS PASS 40 / WARNING 6 / FAIL 0 
+END 2026-11-04 15:53:31 
+
+DELIVERY AUDIT 2026-11-04 15:58:06 Asia/Shanghai
+PASS independent alpha/beta/PCoA/Hellinger/CLR, real intervals, 12 PNG/PDF pairs, existing-output guard, original102 SHA-256, v1 deletion and v2 document sync.
+WARNING visual label overlap; exact values and IDs retained in TSV. Primary check count remains 40 PASS / 6 WARNING / 0 FAIL.
+
+Executor stderr supplement (observed during this v2 run, not captured by R sink):
+Fontconfig warning: using without calling FcInit()
+FINAL PASS: README/cumulative interpretation/current reports 158 local links resolve; final37 outputs, group counts8/2/4/15/4, original102 protected SHA-256 unchanged; withdrawn diversity v1 absent.

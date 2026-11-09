@@ -1,0 +1,94 @@
+START 2026-11-07T17:46:40+08:00
+COMMAND /home/leiyiping/miniconda3/bin/python3 scripts/ecological_candidate_screening_v2.py --output-dir /home/leiyiping/Batch_01/results/ecological_candidates/2026-11-07_v2
+Python 3.14.7 / Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+PARAMETERS {"loose": {"ab": 0.005, "nodes": 2, "high_nodes": 2, "b_ab": 0.005, "reactors": 2, "high_reactors": 2, "c_ab": 0.0025, "bray": 0.0025}, "primary": {"ab": 0.01, "nodes": 3, "high_nodes": 2, "b_ab": 0.01, "reactors": 3, "high_reactors": 2, "c_ab": 0.005, "bray": 0.005}, "strict": {"ab": 0.02, "nodes": 3, "high_nodes": 2, "b_ab": 0.02, "reactors": 4, "high_reactors": 3, "c_ab": 0.01, "bray": 0.01}}
+2026-11-07T17:46:40+08:00 PASS 有效v2指纹/counts: data/asv_table.tsv
+2026-11-07T17:46:40+08:00 PASS 有效v2指纹/taxonomy: data/taxonomy.tsv
+2026-11-07T17:46:40+08:00 PASS 有效v2指纹/sequences: data/exported_sequences/dna-sequences.fasta
+2026-11-07T17:46:40+08:00 PASS 有效v2指纹/source_metadata: metadata/source_sample_metadata.tsv
+2026-11-07T17:46:40+08:00 PASS 有效v2指纹/annotation12: results/functional_guilds/2026-11-03_v2/functional_asv_annotation.tsv
+2026-11-07T17:46:40+08:00 PASS 有效v2指纹/evidence12: results/functional_guilds/2026-11-03_v2/functional_mapping_evidence.tsv
+2026-11-07T17:46:40+08:00 PASS 有效v2指纹/contribution21: results/asv_contributions/2026-11-05_v2/focal_pairwise_asv_contributions.tsv
+2026-11-07T17:46:40+08:00 PASS 有效v2指纹/distance21: results/asv_contributions/2026-11-05_v2/focal_distance_summary.tsv
+2026-11-07T17:46:40+08:00 PASS 有效v2指纹/report11: results/community_composition/2026-11-03_v2/analysis_report.md
+2026-11-07T17:46:40+08:00 PASS 有效v2指纹/report12: results/functional_guilds/2026-11-03_v2/analysis_report.md
+2026-11-07T17:46:40+08:00 PASS 有效v2指纹/report13: results/diversity/2026-11-04_v2/analysis_report.md
+2026-11-07T17:46:40+08:00 PASS 有效v2指纹/report21: results/asv_contributions/2026-11-05_v2/analysis_report.md
+2026-11-07T17:46:40+08:00 PASS 模块2.2产物指纹/ranking22: results/candidate_asvs/2026-11-05_v2/candidate_asv_ranking.tsv
+2026-11-07T17:46:40+08:00 PASS 模块2.2产物指纹/evidence22: results/candidate_asvs/2026-11-05_v2/candidate_asv_evidence.tsv
+2026-11-07T17:46:40+08:00 PASS 模块2.2产物指纹/taxonomy22: results/candidate_asvs/2026-11-05_v2/candidate_asv_taxonomy_review.tsv
+2026-11-07T17:46:40+08:00 PASS 模块2.3当前metadata来源: results/operational_performance/2026-11-06_design_recipe_v2/analysis_metadata.tsv
+2026-11-07T17:46:40+08:00 PASS 全ASV身份: 5510唯一ID与原count、分类、模块1.2和2.2一致
+2026-11-07T17:46:40+08:00 PASS 代表序列身份复用: 仅核对ID与既有指纹，不重复序列质量检查
+2026-11-07T17:46:40+08:00 PASS 样本身份: 33唯一样本ID；原metadata和有效v2一一对应
+2026-11-07T17:46:40+08:00 PASS 原metadata与2.1继承: 原14列、2.1全部63列逐字符保留
+2026-11-07T17:46:40+08:00 PASS 设计映射/G1: 8条记录，逐ID匹配正式设计
+2026-11-07T17:46:40+08:00 PASS 设计映射/G2: 2条记录，逐ID匹配正式设计
+2026-11-07T17:46:40+08:00 PASS 设计映射/G3: 4条记录，逐ID匹配正式设计
+2026-11-07T17:46:40+08:00 PASS 设计映射/G4: 15条记录，逐ID匹配正式设计
+2026-11-07T17:46:40+08:00 PASS 设计映射/G5: 4条记录，逐ID匹配正式设计
+2026-11-07T17:46:40+08:00 PASS G4实际节点: R1为3节点，其余4节点；基线4/后期11，不插补
+2026-11-07T17:46:40+08:00 PASS 温度/初始状态与实测边界: 四起始状态不同，30℃/室温未知分列，全部瞬时DO/温度NA
+2026-11-07T17:46:40+08:00 PASS 阶段/保存/G5层级: 4切换前基线、11设计后期；4℃59d历史；G5单母样
+2026-11-07T17:46:40+08:00 PASS 共同配方与性能门控: 仅共享名义配方，性能关联保持关闭
+2026-11-07T17:46:40+08:00 PASS 计算必要计数条件: 非负整数/无NA/无空样本；沿用既有深度异常QC，不重跑
+2026-11-07T17:46:40+08:00 PASS 33样本比例闭合: 分母始终每样本全部5510 ASV reads，无稀释/过滤
+2026-11-07T17:46:40+08:00 PASS 功能/分类原值复用: 模块1.2全部16列与2.2逐字符一致；原Taxon/Confidence保留
+2026-11-07T17:46:40+08:00 PASS 既有主29指标一致性: 原2.2均值/最大/检出直接复用，和本次比例核对
+2026-11-07T17:46:41+08:00 PASS 既有Bray贡献复用: 55100行/10对与2.2逐ASV一致，贡献和等于既有Bray；未重算距离
+2026-11-07T17:46:41+08:00 PASS 原15候选/证据身份: C01–C15完整保留，旧清单/证据/分类审核不覆盖
+2026-11-07T17:46:41+08:00 PASS 敏感性集合嵌套: 严格池⊆主池⊆宽松池；全5510原样保留
+2026-11-07T17:46:41+08:00 PASS 四重点资格: C02/C04/C05/C10均实际满足主规则；不是无条件入池
+2026-11-07T17:46:41+08:00 PASS 下一阶段推荐资格: 8个生态审核目标；C01/C03另列对照
+2026-11-07T17:46:41+08:00 PASS 原候选证据完整保留: 15条原证据与分类审核所有字段逐字符复制，含真实序列；不新增功能主张
+2026-11-07T17:46:41+08:00 WARNING 阈值与得分: 探索性筛选与确定性优先级，非显著性/置信区间；A与D部分重叠，不是独立生态证据。
+2026-11-07T17:46:41+08:00 WARNING 实验设计/批次: 重复节点、不同初始污泥、共享混合谱系/保存恢复、温度与反应器混杂；提取/PCR/测序子批次及16S拷贝偏倚未分离。跨反应器检出不等于独立复现。
+2026-11-07T17:46:41+08:00 WARNING 分类/功能证据: 沿用SILVA及模块1.2/2.2证据快照；MiDAS与新增文献审核未执行，功能未知不是无功能，所有5510 ASV功能基因/活性未测。
+2026-11-07T17:46:41+08:00 WARNING 性能/因果门控: 无可匹配的实测出水、去除率或功能基因数据；性能关联、DO/温度因果、功能确证、共现网络均关闭且未执行。
+2026-11-07T17:46:42+08:00 PASS all_asv_ecological_features.tsv回读: 5510行×267列逐值一致
+2026-11-07T17:46:42+08:00 PASS candidate_priority_table.tsv回读: 106行×150列逐值一致
+2026-11-07T17:46:42+08:00 PASS 原输入/既有结果保护: 186个既有科研输入、结果、脚本SHA-256不变
+INPUT counts data/asv_table.tsv SHA256 3c4a93ba2b1b020bf9890cb37d1a47fc8b3698a241aeeb50e1988d07e72e3006
+INPUT taxonomy data/taxonomy.tsv SHA256 b990e48bc72a21928e0d74f179603994ff6a1a1a2014f499484b3afb95dbb867
+INPUT sequences data/exported_sequences/dna-sequences.fasta SHA256 a81b33262ea18ab421aa8dfbb2fcb0ac1eef892dc9a1b48a3e6c3f3abf240b7b
+INPUT source_metadata metadata/source_sample_metadata.tsv SHA256 dc506a05f5a3b836da45afc3cb744feeddf763aa4455551dd80bddc44668a59a
+INPUT ranking22 results/candidate_asvs/2026-11-05_v2/candidate_asv_ranking.tsv SHA256 12becc2660ff4240abda87da0afdc49ab9030dc12cad4182f35c02b8704d4a38
+INPUT evidence22 results/candidate_asvs/2026-11-05_v2/candidate_asv_evidence.tsv SHA256 ecebcd797735c18047dfff3de1d0e8595a623c1ba98c6c2aeb8d768e5999c25e
+INPUT taxonomy22 results/candidate_asvs/2026-11-05_v2/candidate_asv_taxonomy_review.tsv SHA256 635f8e72ce397c2a49300785c496febd457bc09bcd760b3b3125c6bf0c20b455
+INPUT annotation12 results/functional_guilds/2026-11-03_v2/functional_asv_annotation.tsv SHA256 05d9a986426e1054eabb0093870dc9078dbd98ac5361f55e7dc0e5ff147240b2
+INPUT evidence12 results/functional_guilds/2026-11-03_v2/functional_mapping_evidence.tsv SHA256 a7e1ba4d01fe23716f68460b471c08212d9ff646e54301cca78aa76f40fc7036
+INPUT contribution21 results/asv_contributions/2026-11-05_v2/focal_pairwise_asv_contributions.tsv SHA256 842db5e3ff628e8ec177dbd80fc666d50efbc46a296764da27e273f949a91d0e
+INPUT distance21 results/asv_contributions/2026-11-05_v2/focal_distance_summary.tsv SHA256 09196dc3fd33639365f93d9a99f766c4b0df364b301c61bec4b7b925a0d1a90b
+INPUT metadata21 results/asv_contributions/2026-11-05_v2/analysis_metadata_addendum.tsv SHA256 acd60f59f7f295a6a5ca09e9c4b801f3e90f5b5adea5b6d70e9ab5eec65d5676
+INPUT metadata23 results/operational_performance/2026-11-06_design_recipe_v2/analysis_metadata.tsv SHA256 16f6e91b40ace510588002e3aac002901ef6c95921165efb0aaa87447e489254
+INPUT report11 results/community_composition/2026-11-03_v2/analysis_report.md SHA256 d3e544e04a0e406257e38a3a3d3a15d3d567e7a459348c3d3b8112c969ef4cc3
+INPUT report12 results/functional_guilds/2026-11-03_v2/analysis_report.md SHA256 ee3315294b322075ec8cecaa6161d2a9fdb8b9924e1d5f5ee20dc661e61d4ea1
+INPUT report13 results/diversity/2026-11-04_v2/analysis_report.md SHA256 170affb1d6559571f712ffa74124d72b05caf50704fd03bd84c21cf5b8df688a
+INPUT report21 results/asv_contributions/2026-11-05_v2/analysis_report.md SHA256 275fc5b40f7b3d229da6d2bc1b7f76f0a1d79d9ba57075734615eb386587d7d6
+INPUT report22 results/candidate_asvs/2026-11-05_v2/analysis_report.md SHA256 3c855120dc89d8ba64da5e60d82cd039b1681082807125b6733418c3c7301037
+INPUT report23 results/operational_performance/2026-11-06_design_recipe_v2/analysis_report.md SHA256 e46bfffeb97352a600aeadd97245373b2a59876ea959dd92a4afe8bbf0a07dc2
+INPUT log23 results/operational_performance/2026-11-06_design_recipe_v2/run.log SHA256 738f950d4df02611ff1daa5b8b3fecb4cb4fe3ab6408be598a906139367e0b7b
+INPUT rules AGENTS.md SHA256 0768e5bfefcb71305748f24772e12f60c42ada52f5197b821dd314cf044a183c
+INPUT context docs/research_context.md SHA256 68604f079bba630e322104e2383f088ac51ae02431a953be8aa2f98ba6bf2017
+INPUT design docs/batch_01/experiment_design.md SHA256 d934ba097876772559a5e2658faf4f5cdbea5564167a6a164efdaf86a448d2b9
+INPUT plan docs/batch_01/analysis_plan.md SHA256 c7250e1440ef404a4df1f06e39abe458ce0743588cb2ed2e1c48b6dba2d1d1ad
+INPUT log_at_start docs/batch_01/analysis_log.md SHA256 4942bce164f0336d90ae2fbbb5a9c2146cc09ad3000c2b12b547dbfac378a2f3
+SCRIPT SHA256 ecac31f157c6d520bddb7c373e5d0e93063d48a29457e8fee8d9f09a094ea625
+OUTPUT all_asv_ecological_features.tsv SHA256 139b97bf64cb5ba5db980cea8a3f2676c0e4bd561cf42e12ef737f8e5102f012
+OUTPUT candidate_priority_table.tsv SHA256 f7ec055e410bfbe3b66f79a46954cb652701201b5a961a5ec441cfa69b19bdc2
+OUTPUT candidate_screening_report.md SHA256 a85f881d0c32a0e5391ecf82a1f8c93a320ed3cd79ba4a68a1d0596ec3c65dc6
+END 2026-11-07T17:46:42+08:00 ELAPSED 2.036 STATUS {'PASS': 42, 'WARNING': 4}
+
+DELIVERY_VALIDATION 2026-11-07T17:49:43+08:00
+PASS independent_integer_threshold_checks_at_least_413250
+PASS relative_abundance_max_error_0
+PASS original_15_evidence_and_taxonomy_fields_preserved
+PASS isolated_reproduction_two_TSV_byte_identical
+PASS overwrite_and_v1_gates_no_mutations
+PASS 195_preexisting_scientific_files_unchanged
+PASS 277_local_links_and_explicit_anchors
+PASS three_project_documents_synchronized_history_retained
+DELIVERY_SHA256 139b97bf64cb5ba5db980cea8a3f2676c0e4bd561cf42e12ef737f8e5102f012  all_asv_ecological_features.tsv
+DELIVERY_SHA256 f7ec055e410bfbe3b66f79a46954cb652701201b5a961a5ec441cfa69b19bdc2  candidate_priority_table.tsv
+DELIVERY_SHA256 95a3023e5de35aee5163b715eaef28aa6aa04d067d6a5a37fa4753cf2da9682b  candidate_screening_report.md
+scientific_inference_performance_causality_function_network_gates: CLOSED; MiDAS_and_new_literature_review: NOT_PERFORMED

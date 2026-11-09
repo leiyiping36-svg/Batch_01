@@ -1,0 +1,98 @@
+START 2026-11-05 15:56:46 CST 
+ /home/leiyiping/miniconda3/envs/rachis-qiime2-2026.7/lib/R/bin/exec/R --no-echo --no-restore --vanilla --file=scripts/g4_asv_contributions.R 
+PASS 环境 : 仅复用现有R/digest/ggplot2，不安装软件。 
+Warning: package ‘ggplot2’ was built under R version 4.5.3
+PASS 输入存在 : 原始count/taxonomy、三个有效v2及设计/审核均存在。 
+PASS 有效版本来源 : 原输入、RDS及组成/功能v2输入SHA-256逐项匹配模块1.3有效v2报告；不使用历史v1。 
+PASS 分析输入格式 : 5510×33非负整数count、ID唯一、无NA/空样本；已有深度QC由指纹复用，不重新筛查异常。 
+PASS 原metadata完整性 : 原33行14列逐值保留；派生表只追加字段。 
+PASS 样本级设计门控 : 33完整ID及8/2/4/15/4；15个G4节点/反应器/前源/阶段/设置逐项匹配。R1无30d不插补。 
+PASS taxonomy与功能连接 : 全部5510 ASV完整原谱系、原Confidence及功能v2逐项相符；不修改taxonomy或重映射功能。代表序列沿用已验证指纹。 
+PASS 派生条件边界 : 保留全部旧45列；新增18列。G4恒温目标7行30℃，室温8行目标NA；全部实测/污泥编号/具体性状NA；前源和历史混合块保留。 
+PASS analysis_metadata_addendum.tsv 回读 : 33 行；字段及全部数值列往返一致。 
+WARNING 科研推断门控关闭 : 四份G4起始污泥不同、四反应器重复测量、混合谱系/保存恢复依赖，温度与个体/初始状态混杂；不拟合模型或做显著性/网络。 
+WARNING 温度/DO/稳态 : 室温数值与实测温度、瞬时DO未知；运行条件标签不回推恢复期实测。后期是设计稳定运行期，性能稳态记录未审阅。 
+PASS 距离复用核验 : 10对Bray/Jaccard/Hellinger/两CLR/深度及低检出敏感性直接提取模块1.3；仅核对ASV贡献和=既有Bray，无全流程Beta重算。 
+PASS focal_distance_summary.tsv 回读 : 10 行；字段及全部数值列往返一致。 
+PASS ASV/属分解恒等式 : 10对各保留5510 ASV（含双零）；Σ|pA−pB|/2=原Bray。属内累计≥属总量先求差；差额=属标签共享量−同ASV共享量。未分类按原父谱系分别保留。 
+PASS focal_pairwise_asv_contributions.tsv 回读 : 55100 行；字段及全部数值列往返一致。 
+PASS focal_pairwise_genus_contributions.tsv 回读 : 6330 行；字段及全部数值列往返一致。 
+Warning in data.frame(comparison_id = paste0(r, "_", day[u], "_to_", day[v]),  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(comparison_id = paste0(r, "_", day[u], "_to_", day[v]),  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(comparison_id = paste0(r, "_", day[u], "_to_", day[v]),  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(comparison_id = paste0(r, "_", day[u], "_to_", day[v]),  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(comparison_id = paste0(r, "_", day[u], "_to_", day[v]),  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(comparison_id = paste0(r, "_", day[u], "_to_", day[v]),  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(comparison_id = paste0(r, "_", day[u], "_to_", day[v]),  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(comparison_id = paste0(r, "_", day[u], "_to_", day[v]),  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(comparison_id = paste0(r, "_", day[u], "_to_", day[v]),  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(comparison_id = paste0(r, "_", day[u], "_to_", day[v]),  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(comparison_id = paste0(r, "_", day[u], "_to_", day[v]),  :
+  row names were found from a short variable and have been discarded
+PASS 时间变化方向与守恒 : 5个同期跨时段差额+11个反应器内相邻转移，全ASV保留。差额=后贡献−前贡献；缩小负、扩大正。区间天数保留，不作因果/动力学速率。 
+PASS focal_temporal_asv_changes.tsv 回读 : 88160 行；字段及全部数值列往返一致。 
+PASS focal_asv_function_annotations.tsv 回读 : 5510 行；字段及全部数值列往返一致。 
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+Warning in data.frame(feature_id = features, sample_id = meta[[1]][i], reactor = reactor[i],  :
+  row names were found from a short variable and have been discarded
+PASS focal_asv_abundance_trajectories.tsv 回读 : 82650 行；字段及全部数值列往返一致。 
+PASS R2_R4_convergence 图层 : 三面板实际构建；PDF/PNG；ASV完整ID、百分比分母和有符号变化可读取。 
+PASS R1_R2_divergence 图层 : 三面板实际构建；PDF/PNG；ASV完整ID、百分比分母和有符号变化可读取。 
+PASS R3_late_composition_persistence 图层 : 三面板实际构建；PDF/PNG；ASV完整ID、百分比分母和有符号变化可读取。 
+PASS 输入与历史结果保护 : 96 个原输入/有效v2/设计/审核/脚本逐一SHA-256保持不变。 
+END 2026-11-05 15:56:56 CST PASS; outputs 16 
+
+2026-11-05 independent delivery review PASS
+{"asv_rows": 55100, "genus_rows": 6330, "temporal_rows": 88160, "trajectory_rows": 82650, "max_cell_error": 4.996003610813204e-16, "protected_files": 139, "net_changes": {"R2_R4_1_to_30": -0.053549340308098034, "R2_R4_30_to_76": -0.016664574802381323, "R2_R4_76_to_145": -0.3687866301240178, "R1_R2_1_to_76": 0.05383619848629656, "R1_R2_76_to_145": 0.29689210242581276}}
+Overwrite guard: nonzero exit before mutation; all 16 output hashes unchanged.
+All 3 PNG chunk CRC/pixel decoding and PDF headers/EOF passed; 3 images visually inspected.
+DISPLAY WARNING: edge distance text partially clipped in top facets; full ASV IDs readable, exact distances in focal_distance_summary.tsv. Original figures preserved.
+Executor stderr observed: Fontconfig warning: using without calling FcInit(). Low-level stderr was not captured by R sink; recorded here after review.
+
+最终归档 2026-11-05 16:03:19 Asia/Shanghai：201本地链接/锚点有效，16文件齐全，脚本指纹匹配；139既有科研文件未变，设计/日志/解释历史前缀保留。三份项目文档已同步；仅本次/tmp快照清理。
+
+VERSION NAME MIGRATION 2026-11-05 16:54:58 Asia/Shanghai
+User instructed v1 historical only; verified v2 inputs. Directory rename: results/asv_contributions/2026-11-05_v1 -> results/asv_contributions/2026-11-05_v2
+No scientific rerun. All 9 non-metadata TSVs and 8 PDF/PNG files byte-identical; metadata only 63 source/version text cells updated; inherited 45 columns unchanged.
+Two R scripts parsed; existing output and legacy-v1 guards tested in 4 cases with no mutations.
+Current script SHA256: 8224e0cdc70a3de3e9b7e30cbd5472bbaee9a1912019fb3e1262d8d318548920
+
+FINAL NAME MIGRATION VALIDATION 2026-11-05 16:56:09 Asia/Shanghai
+155/168 pre-existing files byte-identical; 13 authorized text/provenance updates; 229 local links valid. Current 24+21 input hash ledgers and downstream 11-item gate all match. Legacy directory paths absent; v2 outputs 16+7 files. No scientific recalculation.

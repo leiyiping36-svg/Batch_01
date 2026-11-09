@@ -1,0 +1,69 @@
+START 2026-11-03 15:07:27 Asia/Shanghai
+Command: /home/leiyiping/miniconda3/envs/rachis-qiime2-2026.7/lib/R/bin/exec/R --no-echo --no-restore --vanilla --file=scripts/community_composition.R 
+Output: /home/leiyiping/Batch_01/results/community_composition/2026-11-03_v2 
+PASS 环境依赖 : phyloseq, Biostrings, digest, ggplot2, scales 
+复用已有兼容对象 ; derived metadata= /home/leiyiping/Batch_01/results/community_composition/2026-11-03_v2/analysis_metadata.tsv 
+PASS 模块数量 : G1/G2/G3/G4/G5=8/2/4/15/4；完整SampleID由原始metadata与明确名单核对。 
+PASS 主分析边界 : G1–G4=29样本；G5=4个同一母样级分，独立展示。 
+PASS G4分层与DO边界 : 4个初始设置不确定、11个后期设计稳定期，全部33样本采样实测DO未知。 
+PASS R1实际采样顺序 : A0@1 → A1@120 → A2@56 → E1@1 → E2@76 → E3@145 
+PASS R2实际采样顺序 : B0@1 → B1@120 → B2@21 → B3@56 → F1@1 → F2@30 → F3@76 → F4@145 
+PASS R3实际采样顺序 : C0@1 → C1@120 → C2@56 → G1@1 → G2@30 → G3@76 → G4@145 
+PASS R4实际采样顺序 : D0@1 → D1@120 → D2@21 → D3@56 → H1@1 → H2@30 → H3@76 → H4@145 
+PASS 排序覆盖 : 全部29主分析样本各出现一次；轮次分面，日数不跨保存/混合拼接。 
+PASS ASV相对丰度闭合 : 33个样本最大偏差=0；分母为全部原始reads。 
+PASS Phylum丰度矩阵闭合 : 51条完整谱系；每样本和最大偏差1.44e-15；未分类谱系保留。 
+PASS Class丰度矩阵闭合 : 114条完整谱系；每样本和最大偏差1.11e-15；未分类谱系保留。 
+PASS Genus丰度矩阵闭合 : 633条完整谱系；每样本和最大偏差2.22e-16；未分类谱系保留。 
+PASS Phylum图中比例守恒 : Top N + Others（其余已命名类群）+ Unclassified（全部未分类）=1。 
+PASS Class图中比例守恒 : Top N + Others（其余已命名类群）+ Unclassified（全部未分类）=1。 
+PASS Genus图中比例守恒 : Top N + Others（其余已命名类群）+ Unclassified（全部未分类）=1。 
+Warning: package ‘ggplot2’ was built under R version 4.5.3
+PASS Batch_01 main composition | Phylum绘图层守恒 : ggplot实际图层保留全部类别，各实际样本堆叠高度≈1，无越界删除。 
+PASS Batch_01 main composition | Class绘图层守恒 : ggplot实际图层保留全部类别，各实际样本堆叠高度≈1，无越界删除。 
+PASS Batch_01 main composition | Genus绘图层守恒 : ggplot实际图层保留全部类别，各实际样本堆叠高度≈1，无越界删除。 
+PASS main_composition不覆盖 : 新版本目录，图文件尚不存在。 
+PASS main_composition图输出 : PDF/PNG均已生成；多层级PDF每层一页，PNG纵向拼版。 
+PASS R1 | community succession绘图层守恒 : ggplot实际图层保留全部类别，各实际样本堆叠高度≈1，无越界删除。 
+PASS R1_community_succession不覆盖 : 新版本目录，图文件尚不存在。 
+PASS R1_community_succession图输出 : PDF/PNG均已生成；多层级PDF每层一页，PNG纵向拼版。 
+PASS R2 | community succession绘图层守恒 : ggplot实际图层保留全部类别，各实际样本堆叠高度≈1，无越界删除。 
+PASS R2_community_succession不覆盖 : 新版本目录，图文件尚不存在。 
+PASS R2_community_succession图输出 : PDF/PNG均已生成；多层级PDF每层一页，PNG纵向拼版。 
+PASS R3 | community succession绘图层守恒 : ggplot实际图层保留全部类别，各实际样本堆叠高度≈1，无越界删除。 
+PASS R3_community_succession不覆盖 : 新版本目录，图文件尚不存在。 
+PASS R3_community_succession图输出 : PDF/PNG均已生成；多层级PDF每层一页，PNG纵向拼版。 
+PASS R4 | community succession绘图层守恒 : ggplot实际图层保留全部类别，各实际样本堆叠高度≈1，无越界删除。 
+PASS R4_community_succession不覆盖 : 新版本目录，图文件尚不存在。 
+PASS R4_community_succession图输出 : PDF/PNG均已生成；多层级PDF每层一页，PNG纵向拼版。 
+PASS G5 | R1 size fractions | Phylum绘图层守恒 : ggplot实际图层保留全部类别，各实际样本堆叠高度≈1，无越界删除。 
+PASS G5 | R1 size fractions | Class绘图层守恒 : ggplot实际图层保留全部类别，各实际样本堆叠高度≈1，无越界删除。 
+PASS G5 | R1 size fractions | Genus绘图层守恒 : ggplot实际图层保留全部类别，各实际样本堆叠高度≈1，无越界删除。 
+PASS G5_size_fraction_composition不覆盖 : 新版本目录，图文件尚不存在。 
+PASS G5_size_fraction_composition图输出 : PDF/PNG均已生成；多层级PDF每层一页，PNG纵向拼版。 
+PASS 优势属汇总覆盖 : 33个样本分别列出已命名属Top3；按反应器×模块×子阶段汇总，未知属比例单列；G5均值仅描述四级分。 
+PASS PhylumTSV回读核验 : 写出后的全部数值、样本顺序及闭合性通过。 
+PASS ClassTSV回读核验 : 写出后的全部数值、样本顺序及闭合性通过。 
+PASS GenusTSV回读核验 : 写出后的全部数值、样本顺序及闭合性通过。 
+PASS 原始输入与设计保护 : 所有输入指纹不变；AGENTS.md、研究背景、实验设计、分析计划未改写。 
+WARNING 重复及混杂 : G1前后、G2/G3连续运行、G4纵向及共享混合谱系均相关；DO与阶段/时间混杂，不做独立样本检验、网络或因果推断。 
+WARNING 不平衡与未知 : G2仅R2/R4；G4第30天缺R1；约120d及推算163d非精确日历日期；恢复时长、混合量及稳态性能证据未核验。 
+WARNING DO来源差异 : 初始E1/F1/原G1/H1分析DO设置NA，文档恢复阶段设置3另列；四个初始不标为稳定0.5。后期11样本按设计稳定期，实测均NA。 
+WARNING 16S解释边界 : 读数比例不等于细胞绝对丰度、功能基因、活性或DO因果效应；分类数据库名称按原注释保留。 
+Warning in system("timedatectl", intern = TRUE) :
+  running command 'timedatectl' had status 1
+END 2026-11-03 15:07:41 PASS; elapsed_seconds= 13.36588 
+G5_DETAIL START 2026-11-03 15:08:33 
+Error in g5_detail(normalizePath(args[3], mustWork = TRUE)) : 
+  max(abs(totals - 1)) < 1e-12 is not TRUE
+Calls: g5_detail -> stopifnot
+In addition: Warning message:
+package ‘ggplot2’ was built under R version 4.5.3 
+G5_DETAIL START 2026-11-03 15:09:24 
+PASS G5 independent Phylum : 4 samples; Top 10 + Others + Unclassified = 1; actual plotting layer verified
+PASS G5 independent Class : 4 samples; Top 10 + Others + Unclassified = 1; actual plotting layer verified
+PASS G5 independent Genus : 4 samples; Top 15 + Others + Unclassified = 1; actual plotting layer verified
+G5_DETAIL END PASS
+
+FINAL_VERIFICATION PASS: independent Python aggregation max error 4.996e-16; original input/metadata/design unchanged; historical report/log prefixes preserved; safe rerun rejects existing directory. Final artifacts 21 files, 7 PDF+PNG pairs. G5 independent detail PASS after aggregate column-name correction.
+DELIVERY PASS: PNG CRC/decompression; PDF header/EOF; all local documentation links; R syntax; RDS 5510 ASVs x 33 samples, 1364804 reads; preservation and temporary cleanup verified.

@@ -1,0 +1,55 @@
+{
+  "status": "complete",
+  "sample_id_mapping": "/home/leiyiping/vscode-qiime2-/metadata/sample_id_mapping.tsv",
+  "mapping_sha256": "d4f4d647322b6b7f0746ca88a76763ed8c2cfe1f71adec93a5cb125037e41154",
+  "artifacts": {
+    "table.qza": {
+      "original_path": "/home/leiyiping/vscode-qiime2-/logs/sample_id_normalization_20261026/before/results/per_batch/Batch_01/04_dada2/run_20261017/denoised/table.qza",
+      "original_sha256": "02a043eabba30e52cb02bcfa0b965d6d2b815baf157ee34bac24bd32e4d3b5c3",
+      "current_path": "/home/leiyiping/vscode-qiime2-/results/per_batch/Batch_01/04_dada2/run_20261017/denoised/table.qza",
+      "current_sha256": "aa1a6bac46ebccce26827d71433d85b09b01254ea694eb53c86fd7c7344ba1ce",
+      "current_uuid": "e51636ed-f049-4c00-90cb-8098f9b2c5f6"
+    },
+    "denoising-stats.qza": {
+      "original_path": "/home/leiyiping/vscode-qiime2-/logs/sample_id_normalization_20261026/before/results/per_batch/Batch_01/04_dada2/run_20261017/denoised/denoising-stats.qza",
+      "original_sha256": "6adf1e3cbaa1a9677294adb14511aa135d10a60b5619ca98dadbaa9e82607ff7",
+      "current_path": "/home/leiyiping/vscode-qiime2-/results/per_batch/Batch_01/04_dada2/run_20261017/denoised/denoising-stats.qza",
+      "current_sha256": "05609cf621e2e13313ee7e4014c16b3c0f3849fb88c76d2e4be2eafdc83f613e",
+      "current_uuid": "2adeddc2-ddc7-435e-a00f-2c26b8b9078a"
+    },
+    "feature-frequencies.qza": {
+      "original_path": "/home/leiyiping/vscode-qiime2-/logs/sample_id_normalization_20261026/before/results/per_batch/Batch_01/04_dada2/run_20261017/denoised/feature-frequencies.qza",
+      "original_sha256": "bdee8e5a5d261af140b4d74865c6216b12f499c42f328b470f13c4fde197421b",
+      "current_path": "/home/leiyiping/vscode-qiime2-/results/per_batch/Batch_01/04_dada2/run_20261017/denoised/feature-frequencies.qza",
+      "current_sha256": "34665a5801fd6363474e112babb9a7b0f88664676749f6239af3009df3bd02ab",
+      "current_uuid": "02670318-7c84-4fd2-916c-147771df8712"
+    },
+    "sample-frequencies.qza": {
+      "original_path": "/home/leiyiping/vscode-qiime2-/logs/sample_id_normalization_20261026/before/results/per_batch/Batch_01/04_dada2/run_20261017/denoised/sample-frequencies.qza",
+      "original_sha256": "180d21c13bfffc1abf82f6e39b7abea5c5165db735e465645662fccd0c26335d",
+      "current_path": "/home/leiyiping/vscode-qiime2-/results/per_batch/Batch_01/04_dada2/run_20261017/denoised/sample-frequencies.qza",
+      "current_sha256": "4b556fb65f2621bef1f83aeb934cd74ab8c367b43c8654a252aaa32a5ed36bb2",
+      "current_uuid": "5ba0b8e4-aefc-43bc-92a5-ba9b6fcfb1b5"
+    },
+    "table.qzv": {
+      "original_path": "/home/leiyiping/vscode-qiime2-/logs/sample_id_normalization_20261026/before/results/per_batch/Batch_01/04_dada2/run_20261017/denoised/table.qzv",
+      "original_sha256": "7ce7c7aa188a6d9bfad319e7c5748556d03ab491c5d5b666e452a8d41d563557",
+      "current_path": "/home/leiyiping/vscode-qiime2-/results/per_batch/Batch_01/04_dada2/run_20261017/denoised/table.qzv",
+      "current_sha256": "a8f308c6e3e2683dced4b00459fa63ded9365b37a8f03e8ee88db0eb70ed5005",
+      "current_uuid": null
+    },
+    "denoising-stats.qzv": {
+      "original_path": "/home/leiyiping/vscode-qiime2-/logs/sample_id_normalization_20261026/before/results/per_batch/Batch_01/04_dada2/run_20261017/denoised/denoising-stats.qzv",
+      "original_sha256": "a1a8cd5076b6bb6acd9263e9562ba08b0e9ca3fe470d86d1cceb8481d3cd0bec",
+      "current_path": "/home/leiyiping/vscode-qiime2-/results/per_batch/Batch_01/04_dada2/run_20261017/denoised/denoising-stats.qzv",
+      "current_sha256": "73ad3fb030e4e16560aca08f73eba46c11e231399ea6bc72aa4f6fc594fcf204",
+      "current_uuid": null
+    }
+  },
+  "original_provenance_preserved_in_backup_and_ancestry": true,
+  "transformation": "official feature-table rename-ids; statistics reimported after changing only row IDs; identical trimmed FASTQs reimported with renamed manifest; dependent summaries regenerated",
+  "feature_table_all_cells_unchanged": true,
+  "denoising_statistics_all_values_unchanged": true,
+  "sample_frequencies_all_values_unchanged": true,
+  "trimmed_fastq_files_identical": 66
+}

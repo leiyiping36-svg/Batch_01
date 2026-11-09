@@ -1,0 +1,142 @@
+START 2026-11-08T16:09:31+08:00
+PYTHON 3.14.7
+COMMAND scripts/candidate_ecology_validation_v2.py --midas-fasta /tmp/batch01_MiDAS_5.3_SINTAX_20261108.fa --type-fasta /tmp/batch01_type16S_panel_20261108.fasta --genbank /tmp/batch01_genome_records_20261108.gb --vicinibacter-zips /tmp/batch01_Vicinibacter_reference_20261108.zip /tmp/batch01_Vicinibacter_proximus_reference_20261108.zip --supplement-pdf /tmp/batch01_OLB8_supplement_20261108.pdf --metabolic-figure /tmp/batch01_Vicinibacter_metabolic_figure_20261108.webp --precomputed-midas /tmp/batch01_midas_matches_20261108.tsv
+SCRIPT_SHA256 c1b565e9d3108868dd3b7e8587f3cf0f3f4100a5f2f1984e05320aa38b06a138
+INPUT_SHA256 {"AGENTS.md":"0768e5bfefcb71305748f24772e12f60c42ada52f5197b821dd314cf044a183c","docs/research_context.md":"68604f079bba630e322104e2383f088ac51ae02431a953be8aa2f98ba6bf2017","docs/batch_01/experiment_design.md":"d934ba097876772559a5e2658faf4f5cdbea5564167a6a164efdaf86a448d2b9","docs/batch_01/analysis_plan.md":"c7250e1440ef404a4df1f06e39abe458ce0743588cb2ed2e1c48b6dba2d1d1ad","docs/batch_01/analysis_log.md":"e7719fc0b9631adfb313a10d2c9a84d7e5181674f8b7724b3ae8d287218ed550","data/asv_table.tsv":"3c4a93ba2b1b020bf9890cb37d1a47fc8b3698a241aeeb50e1988d07e72e3006","data/taxonomy.tsv":"b990e48bc72a21928e0d74f179603994ff6a1a1a2014f499484b3afb95dbb867","data/exported_sequences/dna-sequences.fasta":"a81b33262ea18ab421aa8dfbb2fcb0ac1eef892dc9a1b48a3e6c3f3abf240b7b","input/qiime2/rep-seqs.qza":"9266608e6381cdffa1bf582d798902cd6121c4b04c1e0b8d3c353fac8880d20e","metadata/source_sample_metadata.tsv":"dc506a05f5a3b836da45afc3cb744feeddf763aa4455551dd80bddc44668a59a","results/ecological_candidates/2026-11-07_v2/candidate_priority_table.tsv":"f7ec055e410bfbe3b66f79a46954cb652701201b5a961a5ec441cfa69b19bdc2","results/ecological_candidates/2026-11-07_v2/candidate_screening_report.md":"95a3023e5de35aee5163b715eaef28aa6aa04d067d6a5a37fa4753cf2da9682b","results/candidate_asvs/2026-11-05_v2/candidate_asv_taxonomy_review.tsv":"635f8e72ce397c2a49300785c496febd457bc09bcd760b3b3125c6bf0c20b455","results/candidate_asvs/2026-11-05_v2/candidate_asv_evidence.tsv":"ecebcd797735c18047dfff3de1d0e8595a623c1ba98c6c2aeb8d768e5999c25e","results/operational_performance/2026-11-06_design_recipe_v2/analysis_metadata.tsv":"16f6e91b40ace510588002e3aac002901ef6c95921165efb0aaa87447e489254","logs/taxonomy/inputs.json":"2937d9b59781f252688bdbbd9812a8cc5f904b44afc1aff039d64e1e3709df9c","results/community_composition/2026-11-03_v2/analysis_report.md":"d3e544e04a0e406257e38a3a3d3a15d3d567e7a459348c3d3b8112c969ef4cc3","results/functional_guilds/2026-11-03_v2/analysis_report.md":"ee3315294b322075ec8cecaa6161d2a9fdb8b9924e1d5f5ee20dc661e61d4ea1","results/diversity/2026-11-04_v2/analysis_report.md":"170affb1d6559571f712ffa74124d72b05caf50704fd03bd84c21cf5b8df688a","results/asv_contributions/2026-11-05_v2/analysis_report.md":"275fc5b40f7b3d229da6d2bc1b7f76f0a1d79d9ba57075734615eb386587d7d6","results/candidate_asvs/2026-11-05_v2/analysis_report.md":"3c855120dc89d8ba64da5e60d82cd039b1681082807125b6733418c3c7301037","results/operational_performance/2026-11-06_design_recipe_v2/analysis_report.md":"e46bfffeb97352a600aeadd97245373b2a59876ea959dd92a4afe8bbf0a07dc2"}
+EXTERNAL_SHA256 {"/tmp/batch01_MiDAS_5.3_SINTAX_20261108.fa":"06e2fa3edc892676ef1356901d2bf0320520b3e79be6f73caf98955c0aecc00e","/tmp/batch01_type16S_panel_20261108.fasta":"7860fcd3c02accea08416ca5cbbfce5ebf5c3c0ce3cba8b964b86eb9132d1c0b","/tmp/batch01_genome_records_20261108.gb":"40583cdbb6c5521d58b87f437c7cb74a70b672db1997d107952dd2d482cef6a1","/tmp/batch01_Vicinibacter_reference_20261108.zip":"f4950c8b7c700cc55758bbfa6aad67007fd7089b73712d47a0d1fece7e08e77a","/tmp/batch01_Vicinibacter_proximus_reference_20261108.zip":"fb889241e316c826b50dd4a25d68b8238a50e32a3c0ce1ca7f0c47acb49223f1","/tmp/batch01_OLB8_supplement_20261108.pdf":"8967fe0683185e7c35c8efe22cd77098c54ce38a3e68064428d2b86c16a372ef","/tmp/batch01_Vicinibacter_metabolic_figure_20261108.webp":"6467d3ecacc121456b037a07bfad02873171ef61efd274dc4731cae4fd1ff50e"}
+ACCESS 2026-11-08 primary websites reviewed with web search/open/find. Curated evidence below is a frozen manual snapshot, not online revalidation during replay.
+ACQUISITION MiDAS official download; first 60-second transfer timed out at 20692704 bytes, curl --continue-at - completed 169354955 bytes. No partial database used.
+ACQUISITION NCBI efetch nuccore: LC349727.1,KF245634.1,KX443571.1,MW182516.1,MW182517.1,MN817941.1,CP054675.1,CP058702.1,CP062983.1
+ACQUISITION_TYPE16S https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=LC349727,KF245634,KX443571,MW182516,MW182517,MN817941&rettype=fasta&retmode=text
+ACQUISITION_GENBANK https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=CP054675.1,CP058702.1,CP062983.1&rettype=gb&retmode=text
+ACQUISITION_SUPPLEMENT https://public-pages-files-2025.frontiersin.org/articles/917553/file/Data_Sheet_5.pdf/917553_supplementary-materials_datasheets_5_pdf/1
+ACQUISITION_FIG5 https://www.frontiersin.org/files/Articles/917553/xml-images/fmicb-13-917553-g0005.webp
+PRECHECK initial temporary genome parser omitted ambiguous N bases; LOCUS length check prompted correction before final analysis. CP058702.1 retains all 7207 Ns. Preliminary shifted coordinates are superseded.
+COMMAND /home/leiyiping/miniconda3/envs/rachis-qiime2-2026.7/bin/blastn -version
+blastn: 2.17.0+
+ Package: blast 2.17.0, build Aug 11 2025 09:46:06
+
+2026-11-08T16:09:31+08:00 PASS 外部命令退出: 0
+2026-11-08T16:09:31+08:00 PASS MiDAS5.3完整文件指纹: 06e2fa3edc892676ef1356901d2bf0320520b3e79be6f73caf98955c0aecc00e
+2026-11-08T16:09:31+08:00 PASS 历史SILVA样本来源: 旧参数日志33样本一致；不加载或重跑外部分类器
+2026-11-08T16:09:31+08:00 PASS 有效v2指纹链: data/asv_table.tsv
+2026-11-08T16:09:31+08:00 PASS 有效v2指纹链: data/taxonomy.tsv
+2026-11-08T16:09:31+08:00 PASS 有效v2指纹链: data/exported_sequences/dna-sequences.fasta
+2026-11-08T16:09:31+08:00 PASS 有效v2指纹链: metadata/source_sample_metadata.tsv
+2026-11-08T16:09:31+08:00 PASS 有效v2指纹链: results/candidate_asvs/2026-11-05_v2/candidate_asv_taxonomy_review.tsv
+2026-11-08T16:09:31+08:00 PASS 有效v2指纹链: results/operational_performance/2026-11-06_design_recipe_v2/analysis_metadata.tsv
+2026-11-08T16:09:31+08:00 PASS 既有FASTA与原taxonomy ID: 5510个ID一致；不重做上游QC
+2026-11-08T16:09:31+08:00 PASS 固定8目标: C02;C04;C05;C10;C09;N026;N045;N072
+2026-11-08T16:09:31+08:00 PASS 10对象身份与既有主池: 8目标+2对照；没有扩大候选
+2026-11-08T16:09:31+08:00 PASS C02真实序列: d1725130559823512a63bbc2c1bab523; 425bp; SHA256=e1dfed676bae872dc2a1b0e565738aabd3c6b3dee7a231a67b4cd02455e3c48d
+2026-11-08T16:09:31+08:00 PASS C02原SILVA保留: 完整Taxon和Confidence逐字符一致
+2026-11-08T16:09:31+08:00 PASS C02模块2.2复用: 序列/完整谱系/原Confidence一致
+2026-11-08T16:09:31+08:00 PASS C04真实序列: be9af24f8e82484720783bcb4df4f6de; 423bp; SHA256=9ebcdc07a124c610bfbdb742ecb49ce2d19e76ef8b912102e57430fe9a83d984
+2026-11-08T16:09:31+08:00 PASS C04原SILVA保留: 完整Taxon和Confidence逐字符一致
+2026-11-08T16:09:31+08:00 PASS C04模块2.2复用: 序列/完整谱系/原Confidence一致
+2026-11-08T16:09:31+08:00 PASS C05真实序列: 54089b19ce1b3690c1e03d4d34a0162c; 404bp; SHA256=cb16115f27f614a84d9b8370da6a6e82c728be96a2c5e03e1e0c933146963cb9
+2026-11-08T16:09:31+08:00 PASS C05原SILVA保留: 完整Taxon和Confidence逐字符一致
+2026-11-08T16:09:31+08:00 PASS C05模块2.2复用: 序列/完整谱系/原Confidence一致
+2026-11-08T16:09:31+08:00 PASS C10真实序列: c32a06324874a524e422813afbe86397; 423bp; SHA256=33d4b4c95e878ab02cbf63cc645bd34484d4e5861a2c90a0dc64aca519a38997
+2026-11-08T16:09:31+08:00 PASS C10原SILVA保留: 完整Taxon和Confidence逐字符一致
+2026-11-08T16:09:31+08:00 PASS C10模块2.2复用: 序列/完整谱系/原Confidence一致
+2026-11-08T16:09:31+08:00 PASS C09真实序列: a578dfb348f923c17e372f94df5716ef; 404bp; SHA256=f04644c38618397708588b2a922527d7ac328137f1680e66002ec30327fffb8f
+2026-11-08T16:09:31+08:00 PASS C09原SILVA保留: 完整Taxon和Confidence逐字符一致
+2026-11-08T16:09:31+08:00 PASS C09模块2.2复用: 序列/完整谱系/原Confidence一致
+2026-11-08T16:09:31+08:00 PASS N026真实序列: 3c495f2e6a55da9e059579e82a2dfc39; 405bp; SHA256=28f51316f4031193493baff9db96ca2d4b92f5e303f639091f1fdaeff691d29b
+2026-11-08T16:09:31+08:00 PASS N026原SILVA保留: 完整Taxon和Confidence逐字符一致
+2026-11-08T16:09:31+08:00 PASS N045真实序列: 80225eb15f3521f7cc5b5c36e3afdf15; 421bp; SHA256=c396c4c9b68d7307e61f3cdce1c7bd6683a6661f527b8cc0ff6c389842b46d61
+2026-11-08T16:09:31+08:00 PASS N045原SILVA保留: 完整Taxon和Confidence逐字符一致
+2026-11-08T16:09:31+08:00 PASS N072真实序列: cfb0a32a7a0d5e6c513509147a75da65; 424bp; SHA256=c51d6776d4401c4fd06a4344a449210523f0e88301cc098d7a6376fe54089edc
+2026-11-08T16:09:31+08:00 PASS N072原SILVA保留: 完整Taxon和Confidence逐字符一致
+2026-11-08T16:09:31+08:00 PASS C01真实序列: 3cae56af0b082bba9c858d1844913fc3; 429bp; SHA256=9ddcb4164f48d1a893f9a409bb24feae72011ce13b5cde8ffda96b5b045dcccf
+2026-11-08T16:09:31+08:00 PASS C01原SILVA保留: 完整Taxon和Confidence逐字符一致
+2026-11-08T16:09:31+08:00 PASS C01模块2.2复用: 序列/完整谱系/原Confidence一致
+2026-11-08T16:09:31+08:00 PASS C03真实序列: 78c2842bcb5d089b057f231ddd53b8e1; 404bp; SHA256=32321ce3bc1c5aa0aeea88240fc0bbeb1eef8158788ad8a76d0ba04f99a22690
+2026-11-08T16:09:31+08:00 PASS C03原SILVA保留: 完整Taxon和Confidence逐字符一致
+2026-11-08T16:09:31+08:00 PASS C03模块2.2复用: 序列/完整谱系/原Confidence一致
+2026-11-08T16:09:31+08:00 PASS Artifact序列源唯一: ['83a9e2a3-20c4-4d06-b927-9a9f557e9820/data/dna-sequences.fasta']
+2026-11-08T16:09:31+08:00 PASS 10序列与原QZA核对: 只读zip内已有数据；无重复导出
+2026-11-08T16:09:31+08:00 PASS 33样本ID: 计数仅仅读表头，深度QC沿用历史指纹
+2026-11-08T16:09:31+08:00 PASS 分组: 8/2/4/15/4
+2026-11-08T16:09:31+08:00 PASS 原metadata保留: 33×14原值逐项一致
+2026-11-08T16:09:31+08:00 PASS G4设计: 四不同起始污泥；R1/R3=30℃，R2/R4室温未知，纵向不独立
+2026-11-08T16:09:31+08:00 PASS 性能门控: 统一名义配方不增加同期实测、出水或功能基因
+2026-11-08T16:09:33+08:00 PASS MiDAS参考ID唯一: 完整官方SINTAX 5.3参考集111037条
+2026-11-08T16:09:33+08:00 PASS 定向参考集: 6条培养株16S、3个文献基因组；编号含ZRK33勘误
+2026-11-08T16:09:33+08:00 PASS MAG原始记录: GCA_016714365.1
+2026-11-08T16:09:33+08:00 PASS 参考MAG实际isolate与种名: GCA_016714365.1;EsbW_18-Q3-R4-48_MAXAC.074;Candidatus Vicinibacter affinis
+2026-11-08T16:09:33+08:00 PASS MAG完整序列文件唯一: GCA_016714365.1
+2026-11-08T16:09:36+08:00 PASS MAG基因组长度: GCA_016714365.1
+2026-11-08T16:09:36+08:00 PASS MAG原始记录: GCA_016713905.1
+2026-11-08T16:09:36+08:00 PASS 参考MAG实际isolate与种名: GCA_016713905.1;Fred_18-Q3-R57-64_BAT3C.331;Candidatus Vicinibacter proximus
+2026-11-08T16:09:36+08:00 PASS MAG完整序列文件唯一: GCA_016713905.1
+2026-11-08T16:09:38+08:00 PASS MAG基因组长度: GCA_016713905.1
+2026-11-08T16:09:39+08:00 PASS 实际BLAST结果复用: /tmp/batch01_midas_matches_20261108.tsv; SHA256=9a035956a46f0a621636fcc851e5b16380474a324c3295013d6488c067be2af8
+PRECOMPUTED_COMMAND blastn -task blastn -dust no -word_size 11 -evalue 1e-10 -perc_identity 85 -qcov_hsp_perc 90 -max_target_seqs 200000 -max_hsps 1 -num_threads 2 -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen nident gaps qseq sseq"
+2026-11-08T16:09:39+08:00 PASS MiDAS5.3比对格式: 21643 HSP
+2026-11-08T16:09:40+08:00 PASS MiDAS5.3逐HSP核验: qseq/sseq逐碱基与真实序列一致；identity/coverage/nident/gap重算一致
+COMMAND /home/leiyiping/miniconda3/envs/rachis-qiime2-2026.7/bin/blastn -query /tmp/batch01_module25_v2_s8v_8w7w/queries.fasta -task blastn -dust no -word_size 11 -evalue 1e-10 -max_hsps 1 -max_target_seqs 6 -outfmt '6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen nident gaps qseq sseq' -out /tmp/batch01_module25_v2_s8v_8w7w/INSDC_type16S.tsv -subject /tmp/batch01_module25_v2_s8v_8w7w/INSDC_type16S.fasta
+2026-11-08T16:09:40+08:00 PASS 外部命令退出: 0
+2026-11-08T16:09:40+08:00 PASS INSDC_type16S比对格式: 60 HSP
+2026-11-08T16:09:40+08:00 PASS INSDC_type16S逐HSP核验: qseq/sseq逐碱基与真实序列一致；identity/coverage/nident/gap重算一致
+COMMAND /home/leiyiping/miniconda3/envs/rachis-qiime2-2026.7/bin/blastn -query /tmp/batch01_module25_v2_s8v_8w7w/queries.fasta -task blastn -dust no -word_size 11 -evalue 1e-10 -max_hsps 10 -max_target_seqs 3 -outfmt '6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen nident gaps qseq sseq' -out /tmp/batch01_module25_v2_s8v_8w7w/INSDC_genome.tsv -subject /tmp/batch01_module25_v2_s8v_8w7w/INSDC_genome.fasta
+Warning: [blastn] Examining 5 or more matches is recommended
+
+2026-11-08T16:09:40+08:00 PASS 外部命令退出: 0
+2026-11-08T16:09:40+08:00 PASS INSDC_genome比对格式: 50 HSP
+2026-11-08T16:09:40+08:00 PASS INSDC_genome逐HSP核验: qseq/sseq逐碱基与真实序列一致；identity/coverage/nident/gap重算一致
+COMMAND /home/leiyiping/miniconda3/envs/rachis-qiime2-2026.7/bin/blastn -query /tmp/batch01_module25_v2_s8v_8w7w/queries.fasta -task blastn -dust no -word_size 11 -evalue 1e-10 -max_hsps 10 -max_target_seqs 9 -outfmt '6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen nident gaps qseq sseq' -out /tmp/batch01_module25_v2_s8v_8w7w/GCA_016714365.1.tsv -subject /tmp/batch01_module25_v2_s8v_8w7w/GCA_016714365.1.fasta
+2026-11-08T16:09:40+08:00 PASS 外部命令退出: 0
+2026-11-08T16:09:40+08:00 PASS GCA_016714365.1比对格式: 20 HSP
+2026-11-08T16:09:40+08:00 PASS GCA_016714365.1逐HSP核验: qseq/sseq逐碱基与真实序列一致；identity/coverage/nident/gap重算一致
+COMMAND /home/leiyiping/miniconda3/envs/rachis-qiime2-2026.7/bin/blastn -query /tmp/batch01_module25_v2_s8v_8w7w/queries.fasta -task blastn -dust no -word_size 11 -evalue 1e-10 -max_hsps 10 -max_target_seqs 3 -outfmt '6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen nident gaps qseq sseq' -out /tmp/batch01_module25_v2_s8v_8w7w/GCA_016713905.1.tsv -subject /tmp/batch01_module25_v2_s8v_8w7w/GCA_016713905.1.fasta
+Warning: [blastn] Examining 5 or more matches is recommended
+
+2026-11-08T16:09:40+08:00 PASS 外部命令退出: 0
+2026-11-08T16:09:40+08:00 PASS GCA_016713905.1比对格式: 20 HSP
+2026-11-08T16:09:40+08:00 PASS GCA_016713905.1逐HSP核验: qseq/sseq逐碱基与真实序列一致；identity/coverage/nident/gap重算一致
+2026-11-08T16:09:40+08:00 PASS C02合理覆盖MiDAS匹配: 至少1个HSP覆盖查询≥99%
+2026-11-08T16:09:40+08:00 PASS C04合理覆盖MiDAS匹配: 至少1个HSP覆盖查询≥99%
+2026-11-08T16:09:40+08:00 PASS C05合理覆盖MiDAS匹配: 至少1个HSP覆盖查询≥99%
+2026-11-08T16:09:40+08:00 PASS C10合理覆盖MiDAS匹配: 至少1个HSP覆盖查询≥99%
+2026-11-08T16:09:40+08:00 PASS C09合理覆盖MiDAS匹配: 至少1个HSP覆盖查询≥99%
+2026-11-08T16:09:40+08:00 PASS N026合理覆盖MiDAS匹配: 至少1个HSP覆盖查询≥99%
+2026-11-08T16:09:40+08:00 PASS N045合理覆盖MiDAS匹配: 至少1个HSP覆盖查询≥99%
+2026-11-08T16:09:40+08:00 PASS N072合理覆盖MiDAS匹配: 至少1个HSP覆盖查询≥99%
+2026-11-08T16:09:40+08:00 PASS C01合理覆盖MiDAS匹配: 至少1个HSP覆盖查询≥99%
+2026-11-08T16:09:40+08:00 PASS C03合理覆盖MiDAS匹配: 至少1个HSP覆盖查询≥99%
+2026-11-08T16:09:40+08:00 PASS candidate_taxonomy_validation.tsv回读: 10行×39列
+2026-11-08T16:09:50+08:00 PASS 参考原件归档: 6个实际下载源文件；完整MiDAS不重复归档
+2026-11-08T16:09:50+08:00 PASS 全部匹配证据回读: 21793行，原坐标/匹配碱基/并列及低identity均保留
+2026-11-08T16:09:50+08:00 PASS 证据覆盖与边界: 10对象都有显式证据或NA/NOT_VERIFIED记录
+2026-11-08T16:09:50+08:00 PASS 代谢外推门控: N072仅审核近缘参考MAG已报道潜力；全部项目ASV不作基因/通路赋值
+2026-11-08T16:09:50+08:00 PASS candidate_reference_genomes.tsv回读: 14行×30列
+2026-11-08T16:09:50+08:00 PASS candidate_literature_evidence.tsv回读: 34行×16列
+2026-11-08T16:09:50+08:00 PASS candidate_ecological_roles.tsv回读: 10行×15列
+2026-11-08T16:09:50+08:00 WARNING 分类冲突及代码: 原SILVA仅为标签；MiDAS代码不等于培养属，短片段匹配不得定种；原taxonomy不改
+2026-11-08T16:09:50+08:00 WARNING 参考株距离: C04/C10/N026/N045/N072部分命名参考株距离大，文献降为远缘背景；C05同属参考也不支持定种
+2026-11-08T16:09:50+08:00 WARNING 文献可访问性: 已核实范围按逐条记录；全文/补充表/近缘基因组/数据库命名映射未完成者NOT_VERIFIED，未检出不等于不存在
+2026-11-08T16:09:50+08:00 WARNING 科研设计与测量缺口: 纵向/不同起始污泥/混合保存恢复/温度与反应器混杂、G5同母样、批次效应；无性能/功能基因或机制实证
+2026-11-08T16:09:50+08:00 PASS 既有科研文件保护: 191文件SHA256不变
+CHECK_COUNTS {"PASS":90,"WARNING":4}
+OUTPUT_SHA256 analysis_report.md bec0c4ef605cd054180c6a29d8a8774c530ba46f0465fd22eceb3761da0b3c69
+OUTPUT_SHA256 candidate_ecological_roles.tsv 43dedc20977c2a9999700622beb4d90a8777b9534ad5119e92007d0dccb4b46a
+OUTPUT_SHA256 candidate_literature_evidence.tsv 18fbafdeda1ccc0b4c70a86829cf9d3a362da9ea6deb2eeb76239bfd87868347
+OUTPUT_SHA256 candidate_reference_genomes.tsv 1ecc37b913c8f6a4cafcfcf57c5245c01634ecb1b3c6e1bba161533e5009b8e4
+OUTPUT_SHA256 candidate_taxonomy_validation.tsv a5103fee036c141c16c8de54453623beafa2d6c5186d10315063ed490be0dff2
+OUTPUT_SHA256 reference_alignments_v2.tsv.gz 29315bc2e4b136feb6ec123baa8257f6739ee2b716d3e8e65a59d0da7974ea34
+OUTPUT_SHA256 reference_evidence_v2.zip e5835fd372a326a69a1d15397499b1aac5aa1da5ee66369577a043ea2b51832b
+OUTPUT_SHA256 reference_sequences_v2.fasta.gz 54b2e2976ab1d27c3c06fa3590be7148b92b6fe08332a7684c331084361eefe6
+END 2026-11-08T16:09:51+08:00 elapsed_seconds=19.977
+
+INDEPENDENT_DELIVERY 2026-11-08T16:14:00+08:00 PASS: 21793 HSP independent identity/query checks; four tables 10/14/34/10; source ZIP CRC/NCBI MD5; repeated summaries; existing/v1 refusal; 200 baseline protected files; 294 local links.
+DELIVERY_SCRIPT_SHA256 c1b565e9d3108868dd3b7e8587f3cf0f3f4100a5f2f1984e05320aa38b06a138
+DELIVERY_SHA256 analysis_report.md ae4f3710bc3e2fc30ae6a6f3608c3e873418175bc482a5ce0956fabdb373dc59
+DELIVERY_SHA256 candidate_ecological_roles.tsv 43dedc20977c2a9999700622beb4d90a8777b9534ad5119e92007d0dccb4b46a
+DELIVERY_SHA256 candidate_literature_evidence.tsv 18fbafdeda1ccc0b4c70a86829cf9d3a362da9ea6deb2eeb76239bfd87868347
+DELIVERY_SHA256 candidate_reference_genomes.tsv 1ecc37b913c8f6a4cafcfcf57c5245c01634ecb1b3c6e1bba161533e5009b8e4
+DELIVERY_SHA256 candidate_taxonomy_validation.tsv a5103fee036c141c16c8de54453623beafa2d6c5186d10315063ed490be0dff2
+DELIVERY_SHA256 reference_alignments_v2.tsv.gz 29315bc2e4b136feb6ec123baa8257f6739ee2b716d3e8e65a59d0da7974ea34
+DELIVERY_SHA256 reference_evidence_v2.zip e5835fd372a326a69a1d15397499b1aac5aa1da5ee66369577a043ea2b51832b
+DELIVERY_SHA256 reference_sequences_v2.fasta.gz 54b2e2976ab1d27c3c06fa3590be7148b92b6fe08332a7684c331084361eefe6

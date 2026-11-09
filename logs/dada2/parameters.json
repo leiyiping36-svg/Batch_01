@@ -1,0 +1,12 @@
+{
+  "batch_id": "Batch_01",
+  "trunc_len_f": "270",
+  "trunc_len_r": "230",
+  "trim_left_f": "0",
+  "trim_left_r": "0",
+  "max_ee_f": "2",
+  "max_ee_r": "2",
+  "min_overlap": "12",
+  "confirmed": "YES",
+  "rationale": "初始方案：每样本前3000对裁剪reads抽查，R1第270位均值Q32.5，R2第230位Q29.0；预计约430bp插入片段重叠约70bp，须以全量合并率及ASV长度复核；实际run待确认"
+}

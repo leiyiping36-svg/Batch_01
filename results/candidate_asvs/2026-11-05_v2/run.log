@@ -1,0 +1,82 @@
+START 2026-11-05 16:37:30 CST 
+COMMAND /home/leiyiping/miniconda3/envs/rachis-qiime2-2026.7/lib/R/bin/exec/R --no-echo --no-restore --vanilla --file=scripts/candidate_asv_review.R 
+PASS 环境 : 复用现有R/digest/ggplot2/Biostrings，不安装软件。 
+Warning: package ‘ggplot2’ was built under R version 4.5.3
+PASS 输入存在 : 原始count/taxonomy/FASTA、有效1.1/1.2/1.3/2.1和设计均存在。 
+PASS 有效基线与既有QC复用 : 原输入/对象/功能v2/有效报告/设计指纹匹配2.1报告。只做本模块必需断言，不重复测序QC、分类或完整距离。 
+PASS 计数输入必需条件 : 5510×33原整数计数，ID唯一，无缺失/负值/空样本；深度异常QC不重跑。 
+PASS 样本级设计门控 : 原14列保留，33样本/8-2-4-15-4逐ID匹配；G4真实3/4/4/4节点、温度/基线/11后期/保存恢复和G5单母样核对。 
+PASS 分类及功能连接 : 全部5510 IDs与原FASTA/taxonomy一致，2.1原16列功能逐值等于1.2 v2；完整谱系/Confidence原值复用，不更新分类/功能。 
+PASS 完整轨迹复用 : 82650行逐格核对既有count/比例/节点，G4指标及绘图直接复用2.1轨迹；全33上下文指标仅从原count汇总。 
+PASS 贡献复用与守恒 : 55100行10对贡献和等于2.1已有Bray；88160行16段时间变化完整保留，仅汇总原表，不重复计算距离。 
+PASS 预定筛选规则 : 指定5+非指定max贡献≥0.005前10，共15；全部5510 ASV排名保留，分类/功能不参与选择。 
+PASS 阈值敏感性 : 3个贡献阈值×3个补充名额，全部9种输出在报告内；不更改主规则。检出≥1/5不作为筛选门槛。 
+PASS 15候选代表序列身份 : 实际核对长度、ACGT和序列MD5与ASV ID；全谱系及原Confidence数值/原字符串并列。 
+PASS 无虚构参考匹配 : 本次不运行BLAST/系统发育/重分类；匹配、覆盖率及物种结论均NA，序列直接列于审核表供后续定向比对。 
+WARNING 分类分辨率 : 2 候选属级不足； 2 候选Confidence<0.90。0.90仅审核标记、不删样、不等于功能置信度；上级--other语义未确认。 
+PASS 逐ASV文献边界 : 15候选均有证据行；6条核实原研究、2个分类受限候选文献NA待核实。旧功能证据完整保留，新背景不改映射。 
+WARNING 参考比对待核实 : 项目无本地参考比对库，PATH未提供blastn/makeblastdb；只列真实序列，未运行BLAST或给出相似度/物种鉴定。 
+WARNING 文献获取层级 : 6篇原研究按实际摘要/索引片段/相关结果核实，非系统综述；Chryseotalea直接打开验证码，Acinetobacter全文403；分类受限候选的直接功能文献仍待核实。 
+WARNING 科研推断门控关闭 : G4四份起始状态各异；共享谱系/保存恢复、纵向重复、温度与反应器/初始群落混杂。室温/瞬时DO/温度未知，G5单母样；不做推断、因果或功能确证。 
+PASS candidate_asv_ranking.tsv 回读 : 5510 行；字段和全部数值列往返一致。 
+PASS candidate_asv_taxonomy_review.tsv 回读 : 15 行；字段和全部数值列往返一致。 
+PASS candidate_asv_evidence.tsv 回读 : 15 行；字段和全部数值列往返一致。 
+PASS 轨迹图实际节点 : 15候选×15实际G4节点=225点，图层数值/非负/完整ID核验；独立纵轴，不补R1-30d。G5不连入G4时间轴。 
+PASS 原输入及历史结果保护 : 159 个科研输入/旧结果/脚本SHA-256不变；未改原metadata、taxonomy、功能映射或RDS。 
+END 2026-11-05 16:37:39 CST elapsed_sec 9.507694 
+R version 4.5.2 (2025-10-31)
+Platform: x86_64-conda-linux-gnu
+Running under: Ubuntu 26.04.1 LTS
+
+Matrix products: default
+BLAS/LAPACK: /home/leiyiping/miniconda3/envs/rachis-qiime2-2026.7/lib/libopenblasp-r0.3.33.so;  LAPACK version 3.12.0
+
+locale:
+ [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+ [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+ [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
+
+time zone: Asia/Shanghai
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] ggplot2_4.0.3
+
+loaded via a namespace (and not attached):
+ [1] crayon_1.5.3        vctrs_0.7.3         cli_3.6.6          
+ [4] rlang_1.3.0         generics_0.1.4      textshaping_1.0.5  
+ [7] S7_0.2.2            labeling_0.4.3      glue_1.8.1         
+[10] S4Vectors_0.48.0    Biostrings_2.78.0   ragg_1.5.2         
+[13] stats4_4.5.2        scales_1.4.0        grid_4.5.2         
+[16] Seqinfo_1.0.0       tibble_3.3.1        IRanges_2.44.0     
+[19] lifecycle_1.0.5     compiler_4.5.2      dplyr_1.2.1        
+[22] RColorBrewer_1.1-3  pkgconfig_2.0.3     XVector_0.50.0     
+[25] systemfonts_1.3.2   farver_2.1.2        digest_0.6.39      
+[28] R6_2.6.1            tidyselect_1.2.1    pillar_1.11.1      
+[31] magrittr_2.0.5      withr_3.0.3         tools_4.5.2        
+[34] gtable_0.3.6        BiocGenerics_0.56.0
+
+DELIVERY_VALIDATION 2026-11-05 16:41:23 Asia/Shanghai
+Independent Python: 592164 numeric comparisons; max_error=1.7763568394002505e-15; PASS.
+All5510 strata/persistence and 10 existing contribution pairs reused; no new distance calculation.
+PNG CRC/decompression 2560x2560; PDF header/EOF; 15 panels visually inspected: PASS.
+Original-directory rerun rejected exit=1 before writes; 7 output hashes unchanged.
+157 pre-task protected scientific files unchanged. Original taxonomy/function mapping/metadata/RDS unchanged.
+Validation-only tie correction: R locale and Python code-point pair-name order differ for equal maxima; check selected pair attains maximum. Results unchanged.
+Historical classifier provenance read-only: logs/taxonomy/inputs.json SHA256=2937d9b59781f252688bdbbd9812a8cc5f904b44afc1aff039d64e1e3709df9c; confidence=0.7; classifier name silva144-2026.7-full-length.qza. Not loaded or rerun.
+No Fontconfig or other external renderer warning observed in this execution output.
+
+最终归档 2026-11-05 16:42:04 Asia/Shanghai：211本地链接可解析，7产物齐全，脚本SHA-256匹配；157个任务前科研文件未变，日志历史前缀完整，累计解释仅更新顶部日期/导航状态后追加新模块，其余历史原文保留。仅清理本任务创建的3个/tmp核验文件。
+
+VERSION NAME MIGRATION 2026-11-05 16:54:58 Asia/Shanghai
+User instructed v1 historical only; verified v2 inputs. Directory rename: results/candidate_asvs/2026-11-05_v1 -> results/candidate_asvs/2026-11-05_v2
+No scientific rerun. All 9 non-metadata TSVs and 8 PDF/PNG files byte-identical; metadata only 63 source/version text cells updated; inherited 45 columns unchanged.
+Two R scripts parsed; existing output and legacy-v1 guards tested in 4 cases with no mutations.
+Current script SHA256: 482464e3164ff11834cb76126b5a13547a568b55a79e3c3a8193348cb8ba97b8
+
+FINAL NAME MIGRATION VALIDATION 2026-11-05 16:56:09 Asia/Shanghai
+155/168 pre-existing files byte-identical; 13 authorized text/provenance updates; 229 local links valid. Current 24+21 input hash ledgers and downstream 11-item gate all match. Legacy directory paths absent; v2 outputs 16+7 files. No scientific recalculation.

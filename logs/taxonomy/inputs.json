@@ -1,0 +1,56 @@
+{
+  "inputs": {
+    "table": {
+      "path": "/home/leiyiping/vscode-qiime2-/results/per_batch/Batch_01/04_dada2/run_20261017/denoised/table.qza",
+      "sha256": "aa1a6bac46ebccce26827d71433d85b09b01254ea694eb53c86fd7c7344ba1ce"
+    },
+    "reads": {
+      "path": "/home/leiyiping/vscode-qiime2-/results/per_batch/Batch_01/04_dada2/run_20261017/denoised/rep-seqs.qza",
+      "sha256": "9266608e6381cdffa1bf582d798902cd6121c4b04c1e0b8d3c353fac8880d20e"
+    },
+    "classifier": {
+      "path": "/home/leiyiping/16S_project/reference/silva144-2026.7-full-length.qza",
+      "sha256": "e6a6ac57b880c4f9e92baf8c4050483a6deed2615a9c001a7251c01dfe32a047"
+    }
+  },
+  "confidence": 0.7,
+  "read_orientation": "same",
+  "n_jobs": 1,
+  "reads_per_batch": 100,
+  "batch": "Batch_01",
+  "sample_ids": [
+    "Batch_01_A0",
+    "Batch_01_A1",
+    "Batch_01_A2",
+    "Batch_01_E1",
+    "Batch_01_E2",
+    "Batch_01_E3",
+    "Batch_01_S1",
+    "Batch_01_S2",
+    "Batch_01_S3",
+    "Batch_01_S4",
+    "Batch_01_B0",
+    "Batch_01_B1",
+    "Batch_01_B2",
+    "Batch_01_B3",
+    "Batch_01_F1",
+    "Batch_01_F2",
+    "Batch_01_F3",
+    "Batch_01_F4",
+    "Batch_01_C0",
+    "Batch_01_C1",
+    "Batch_01_C2",
+    "Batch_01_G1",
+    "Batch_01_G2",
+    "Batch_01_G3",
+    "Batch_01_G4",
+    "Batch_01_D0",
+    "Batch_01_D1",
+    "Batch_01_D2",
+    "Batch_01_D3",
+    "Batch_01_H1",
+    "Batch_01_H2",
+    "Batch_01_H3",
+    "Batch_01_H4"
+  ]
+}
